@@ -26,23 +26,36 @@
                     OUR <strong><span class="shadow">SPONSORS</span></strong>
                 </h1>
                 <div class="center membership-card">
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flip-container">
                         <div class="flipper">
                             <div class="front">
                                 <figure class="image">
-                                    <img src="<%= require('../assets/sponsor-images/membership-card-front.png') %>" alt="Membership Card Front Photo">
+                                    <img src="<%= require('../assets/sponsor-images/sponsors-card.gif') %>" alt="Membership Card Front Photo">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- This is the previous flipper functionality in case there was two sides of the card. This can be brought back at another time. (need to modify scss for functionality to come back)
+                     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <figure class="image">
+                                    <img src="<%= require('../assets/sponsor-images/sponsors-card.gif') %>" alt="Membership Card Front Photo">
                                 </figure>
                             </div>
                             <div class="back">
                                 <figure class="image">
-                            <img src="<%= require('../assets/sponsor-images/membership-card-back.png') %>" alt="Membership Card Back Photo">
-                        </figure>
+                                    <img src="<%= require('../assets/sponsor-images/sponsors-card.gif') %>" alt="Membership Card Back Photo">
+                                </figure>
                             </div>
                         </div>
                     </div>
+                    -->
+
                 </div>
                 <p class="subtitle is-size-6">
-                    the membership card (2018-2019) costs $5
+                    the membership card (2020-2021) is free!
                 </p>
                 <p class="subtitle">
                     MANABA’s membership card offers discounts at select Montreal establishments, thanks to our generous sponsors.
@@ -54,6 +67,7 @@
                     <button class="button" data-filter=".food"><span>Food</span></button>
                     <button class="button" data-filter=".services"><span>Services</span></button>
                     <button class="button" data-filter=".snacks"><span>Snacks</span></button>
+                    <button class="button" data-filter=".stores"><span>Stores</span></button>
                 </div>
                 <div class="columns grid is-multiline">
                     <div class="column element-item is-one-third drinks">
@@ -67,114 +81,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column element-item is-one-third cafe">
-                        <img src="<%= require('../assets/sponsor-images/cafe-et-crepe.png') %>" alt="Sponsor Image">
+
+                    <div class="column element-item is-one-third food snacks">
+                        <img src="<%= require('../assets/sponsor-images/lee-n-kim.png') %>" alt="Sponsor Image">
                         <div class="sponsor-overlay">
                             <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Café et Crêpe</h3>
+                                <h3>Lee N Kim</h3>
                                 <span></span>
-                                <p>40% crepes from 3-6PM</p>
-                                <p>(374 Saint-Catherine St W)</p>
+                                <p>5% off $10 or more </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="column element-item is-one-third food">
-                        <img src="<%= require('../assets/sponsor-images/chef-on-call.png') %>" alt="Sponsor Image">
+                        <img src="<%= require('../assets/sponsor-images/wok-cafe.png') %>" alt="Sponsor Image">
                         <div class="sponsor-overlay">
                             <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Chef on Call</h3>
+                                <h3>Wok Cafe</h3>
                                 <span></span>
-                                <p>Sponsor</p>
+                                <p>10% off with cash </p>
                             </div>
                         </div>
                     </div>
-                    <div class="column element-item is-one-third drinks">
-                        <img src="<%= require('../assets/sponsor-images/chicha.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Chicha</h3>
-                                <span></span>
-                                <p>10% off a $15 plus order</p>
-                                <p>(2162 Saint-Catherine St)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third services">
-                        <img src="<%= require('../assets/sponsor-images/club-lacite.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Club LaCité</h3>
-                                <span></span>
-                                <p>Sponsor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third cafe">
-                        <img src="<%= require('../assets/sponsor-images/copper-branch.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Copper Branch</h3>
-                                <span></span>
-                                <p>10% off</p>
-                                <p>(600 Boulevard de Maisonneuve O)</p>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="column element-item is-one-third food">
-                        <img src="<%= require('../assets/sponsor-images/dumpling-shop.png') %>" alt="Sponsor Image">
+                        <img src="<%= require('../assets/sponsor-images/cuisine-szechuan.png') %>" alt="Sponsor Image">
                         <div class="sponsor-overlay">
                             <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Dumpling Shop</h3>
+                                <h3>Cuisine Szechuan</h3>
                                 <span></span>
-                                <p>10% off with cash</p>
-                                <p>(5674 Monkland Ave)</p>
+                                <p>10% off with cash + debit </p>
                             </div>
                         </div>
                     </div>
-                    <div class="column element-item is-one-third snacks">
-                        <img src="<%= require('../assets/sponsor-images/gauffre-mignonne.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Gauffre Mignonne</h3>
-                                <span></span>
-                                <p>10% off</p>
-                                <p>(55 Saint-Catheirne St E)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third drinks snacks">
-                        <img src="<%= require('../assets/sponsor-images/gazo.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Gazo</h3>
-                                <span></span>
-                                <p>10% off</p>
-                                <p>(1651 Saint-Catherine St W)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third food">
-                        <img src="<%= require('../assets/sponsor-images/hinnawi-bros.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Hinnawi Bros</h3>
-                                <span></span>
-                                <p>20% off</p>
-                                <p>(645 Avenue du Président-Kennedy)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third food">
-                        <img src="<%= require('../assets/sponsor-images/luos-pho.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Luo's Pho</h3>
-                                <span></span>
-                                <p>10% off with cash</p>
-                                <p>(3575 Ave du Parc)</p>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="column element-item is-one-third drinks food">
                         <img src="<%= require('../assets/sponsor-images/majesthe.png') %>" alt="Sponsor Image">
                         <div class="sponsor-overlay">
@@ -186,61 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column element-item is-one-third services">
-                        <img src="<%= require('../assets/sponsor-images/mei-clinic.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Mei Clinic</h3>
-                                <span></span>
-                                <p>20% off fillings, root canals, wisdom teeth extractions, and 30% off cleaning</p>
-                                <p>(1442 Sherbrooke St W Suite 100)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third food">
-                        <img src="<%= require('../assets/sponsor-images/nouilles.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Nouilles Zhonghua</h3>
-                                <span></span>
-                                <p>5% off cash purchases</p>
-                                <p>(904 Sherbrooke St W)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third cafe">
-                        <img src="<%= require('../assets/sponsor-images/presse-cafe-1.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Presse Café (Maisonneuve)</h3>
-                                <span></span>
-                                <p>20% off</p>
-                                <p>(1021 Maisonneuve Ouest)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third cafe">
-                        <img src="<%= require('../assets/sponsor-images/presse-cafe-2.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Presse Cafe (Milton/Parc)</h3>
-                                <span></span>
-                                <p>5% off $5+ / 10% off $10+</p>
-                                <p>(3501 Ave du Parc)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column element-item is-one-third food">
-                        <img src="<%= require('../assets/sponsor-images/ramen-misoya.png') %>" alt="Sponsor Image">
-                        <div class="sponsor-overlay">
-                            <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Ramen Misoya</h3>
-                                <span></span>
-                                <p>10% off two ramens</p>
-                                <p>(2065 Bishop St)</p>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="column element-item is-one-third food">
                         <img src="<%= require('../assets/sponsor-images/thaiphon.png') %>" alt="Sponsor Image">
                         <div class="sponsor-overlay">
@@ -252,27 +138,111 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="column element-item is-one-third food">
-                        <img src="<%= require('../assets/sponsor-images/the-basak.png') %>" alt="Sponsor Image">
+                        <img src="<%= require('../assets/sponsor-images/noodle-hero.png') %>" alt="Sponsor Image">
                         <div class="sponsor-overlay">
                             <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>The Basak</h3>
+                                <h3>Noodle Hero</h3>
                                 <span></span>
-                                <p>10% off</p>
-                                <p>(1237 Guy St)</p>
+                                <p>10% off with cash </p>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="column element-item is-one-third food">
+                        <img src="<%= require('../assets/sponsor-images/nouilles.png') %>" alt="Sponsor Image">
+                        <div class="sponsor-overlay">
+                            <div class="sponsor-details has-text-centered p-b-md">
+                                <h3>Nouilles Zhonghua</h3>
+                                <span></span>
+                                <p>5% off cash purchases</p>
+                                <p>(904 Sherbrooke St W)</p>
                             </div>
                         </div>
                     </div>
-                    <div class="column element-item is-one-third food drinks">
-                        <img src="<%= require('../assets/sponsor-images/vua.png') %>" alt="Sponsor Image">
+
+                    <div class="column element-item is-one-third food">
+                        <img src="<%= require('../assets/sponsor-images/la-maison-pekin.png') %>" alt="Sponsor Image">
                         <div class="sponsor-overlay">
                             <div class="sponsor-details has-text-centered p-b-md">
-                                <h3>Vua</h3>
+                                <h3>La Maison Pekin</h3>
                                 <span></span>
-                                <p>10% off two or more items</p>
+                                <p>15% discount takeout </p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="column element-item is-one-third food">
+                        <img src="<%= require('../assets/sponsor-images/hotpot-panda.png') %>" alt="Sponsor Image">
+                        <div class="sponsor-overlay">
+                            <div class="sponsor-details has-text-centered p-b-md">
+                                <h3>Hotpot Panda</h3>
+                                <span></span>
+                                <p>10% off with cash </p>
+                                <p>(20% during summer) </p>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="column element-item is-one-third food">
+                        <img src="<%= require('../assets/sponsor-images/ramen-misoya.png') %>" alt="Sponsor Image">
+                        <div class="sponsor-overlay">
+                            <div class="sponsor-details has-text-centered p-b-md">
+                                <h3>Ramen Misoya</h3>
+                                <span></span>
+                                <p>10% off two ramens</p>
+                                <p>(2065 Bishop St)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column element-item is-one-third stores snacks">
+                        <img src="<%= require('../assets/sponsor-images/epicerie-coreene.png') %>" alt="Sponsor Image">
+                        <div class="sponsor-overlay">
+                            <div class="sponsor-details has-text-centered p-b-md">
+                                <h3>Epicerie Coreene</h3>
+                                <span></span>
+                                <p>10% discount</p>
+                                <p>Excluding Hardware</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column element-item is-one-third cafe">
+                        <img src="<%= require('../assets/sponsor-images/cafe-et-crepe.png') %>" alt="Sponsor Image">
+                        <div class="sponsor-overlay">
+                            <div class="sponsor-details has-text-centered p-b-md">
+                                <h3>Café et Crêpe</h3>
+                                <span></span>
+                                <p>40% crepes from 3-6PM</p>
+                                <p>(374 Saint-Catherine St W)</p>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="column element-item is-one-third services">
+                        <img src="<%= require('../assets/sponsor-images/valentin-barber.png') %>" alt="Sponsor Image">
+                        <div class="sponsor-overlay">
+                            <div class="sponsor-details has-text-centered p-b-md">
+                                <h3>Valentin Private Barber</h3>
+                                <span></span>
+                                <p>50% off first haircut</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column element-item is-one-third drinks">
+                        <img src="<%= require('../assets/sponsor-images/mango-mango.png') %>" alt="Sponsor Image">
+                        <div class="sponsor-overlay">
+                            <div class="sponsor-details has-text-centered p-b-md">
+                                <h3>Mango Mango</h3>
+                                <span></span>
+                                <p>10% discount cash</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
